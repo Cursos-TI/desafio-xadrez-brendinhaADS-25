@@ -11,11 +11,14 @@ int main() {
    
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
-
+ 
+    do {
+    
     printf("*** Movimento de Pecas de Xadrez! ***\n"); 
     printf("1. Bispo\n"); 
     printf("2. Torre\n"); 
     printf("3. Rainha\n"); 
+    printf("4. Sair do jogo!\n"); 
     printf("Escolha uma peça:\n"); 
     scanf(" %d", &opcao);
 
@@ -51,12 +54,15 @@ int main() {
         printf("Direita\n"); 
        }
     break; 
+    case 4: 
+       printf("Saindo do jogo...\n"); 
+    break;
     default:
        printf("Opção inválida!\n"); 
         break;
     }
     
-
+    } while (opcao != 4);
     
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
