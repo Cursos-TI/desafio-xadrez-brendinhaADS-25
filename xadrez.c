@@ -31,7 +31,7 @@ void movertorre(int casas){
 
 //rainha recursiva 
 void moverRainha(int casas){
-   if(casas > 0)
+   if(casas <= 0)
    return; 
    printf("Direita!\n");  
    moverRainha(casas - 1); 
