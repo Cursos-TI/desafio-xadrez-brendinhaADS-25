@@ -6,22 +6,23 @@
 
 //bispo recursiva 
 void moverbispo(int casas){
-   if(casas > 0)
+   if(casas <= 0)
       return; 
       //loop externo 
    for (int i = 0; i < 1; i++){
       printf("Cima!\n");
-   }
+
    //loop interno
    for(int j = 0; j < 1; j++){
-      printf("Direita!\n"); 
+      printf("Direita!\n");
+   } 
    }
    moverbispo(casas - 1); 
 }
  
 //torre recursiva 
 void movertorre(int casas){
-   if(casas > 0)
+   if(casas <= 0)
       return; 
 
    printf("Direita\n"); 
@@ -38,7 +39,7 @@ void moverRainha(int casas){
 
 //cavalo 
 void movercavalo (){
-   for(int vertical = 0; vertical < 3; vertical++)
+   for(int vertical = 0; vertical < 3; vertical++){
 
     for(int horizontal = 0; horizontal < 2; horizontal++){
       if(vertical < 2 && horizontal == 0){
@@ -50,6 +51,7 @@ void movercavalo (){
          break;
       }
     }
+   }
 }
 
 int main() {
