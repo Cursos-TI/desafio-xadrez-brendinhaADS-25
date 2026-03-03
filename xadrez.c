@@ -29,7 +29,7 @@ void movertorre(int casas){
 }
 
 //rainha recursiva 
-void moverRinha(int casas){
+void moverRainha(int casas){
    if(casas > 0)
    return; 
    printf("Direita!\n");  
